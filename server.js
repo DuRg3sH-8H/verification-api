@@ -4,14 +4,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-const corsOptions = {
-  origin:
-    "https://verification-client-git-main-durg3sh-8hs-projects.vercel.app/", 
-  methods: "GET,POST",
-  allowedHeaders: "Content-Type",
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(bodyParser.json());
 
